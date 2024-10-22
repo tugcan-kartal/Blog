@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+    <div className="flex justify-center items-center min-h-screen">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 gap-x-[10vw] px-4 py-10">
         
         <div className="flex flex-col gap-6 max-w-lg text-center lg:text-left">
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-          <Image src={HeroImage} alt="Hero Image" layout="responsive" priority />
+          <Image src={HeroImage} alt="Hero Image" priority />
         </div>
 
       </div>
