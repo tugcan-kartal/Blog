@@ -35,7 +35,7 @@ const Navbar:React.FC=()=>{
             <div className="flex justify-between mt-[5vh]">
 
                 <div>
-                    <div>Tugcan</div>
+                    <div className="text-xl font-semibold">Tugcan</div>
                 </div>
 
                 <div className="flex gap-x-[2vw]">

@@ -4,7 +4,7 @@ import HeroImage from "@/../public/HomePage-Hero.svg"
 export default function Home() {
   return (
     <div>
-      <div className="flex mx-auto mt-[20vh]">
+      <div className="flex mx-auto mt-[20vh] gap-x-[5vw]">
 
         <div className="flex flex-col gap-y-[5vh]">
           <div className="text-6xl">
