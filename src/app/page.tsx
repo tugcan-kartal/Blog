@@ -1,25 +1,30 @@
 import Image from "next/image";
-import HeroImage from "@/../public/HomePage-Hero.svg"
+import HeroImage from "@/../public/HomePage-Hero.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex mx-auto mt-[20vh] gap-x-[5vw]">
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10 gap-x-[10vw] px-4 py-10">
+        
+        <div className="flex flex-col gap-6 max-w-lg text-center lg:text-left">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            Better Design for Your Digital Products
+          </h1>
 
-        <div className="flex flex-col gap-y-[5vh]">
-          <div className="text-6xl">
-            Better design for your digital products.
-          </div>
+          <p className="text-base sm:text-lg lg:text-2xl text-gray-600 leading-relaxed">
+            Turning your idea into reality. We bring together the best teams from the global tech industry.
+          </p>
 
-          <div className="text-2xl">
-            Turning your Idea into Reality. We bring together the teams from the global tech industry.
-          </div>
-
-          <button className="text-xl bg-[#1533DC] w-[25vw] h-[5vh] rounded-lg">See Our Works</button>
+          <Link href="/portfolio">
+            <div className="inline-block bg-blue-600 text-white text-sm sm:text-lg lg:text-xl font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+              See Our Works
+            </div>
+          </Link>
         </div>
 
-        <div>
-          <Image src={HeroImage} alt="not found"/>
+        <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+          <Image src={HeroImage} alt="Hero Image" layout="responsive" priority />
         </div>
 
       </div>
