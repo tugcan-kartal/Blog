@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
                 {/* Websites Section */}
                 <div className="relative group transition duration-300">
                     <Link
-                        href="/portfolio/websites"
+                        href={"/portfolio/websites"}
                         className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                     >
                         <Image
@@ -33,7 +33,7 @@ const Portfolio: React.FC = () => {
                 {/* Applications Section */}
                 <div className="relative group transition duration-300">
                     <Link
-                        href="/portfolio/applications"
+                        href={"/portfolio/applications"}
                         className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                     >
                         <Image
