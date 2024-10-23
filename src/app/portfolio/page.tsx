@@ -4,29 +4,51 @@ import WebsiteImage from "@/../public/PortfolioPage-Websites.jpg";
 import ApplicationsImage from "@/../public/PortfolioPage-Applications.jpg";
 import Link from "next/link";
 
-
-const Portfolio:React.FC=()=>{
-    return(
-        <div>
-            <div className="mt-[5vh] flex flex-col items-center justify-center gap-y-[2vh]">
-                <div>OUR WORKS</div>
-                <div>Choose a gallery</div>
+const Portfolio: React.FC = () => {
+    return (
+        <div className="container mx-auto px-4 mt-[5vh]">
+            <div className="text-center mb-10">
+                <h1 className="text-4xl font-bold mb-2">Our Works</h1>
+                <p className="text-lg text-gray-600">Choose a gallery</p>
             </div>
 
-            <div className="flex justify-between mt-[10vh] gap-x-[2vw]">
-                <div className="relative">
-                    <Link href={"/portfolio/websites"} className="absolute text-white bottom-10 left-5 font-semibold">Websites</Link>
-                    <Image className="w-[40vw] h-[40vh]" src={WebsiteImage} alt="not found"/>
+            <div className="flex flex-col md:flex-row justify-evenly gap-x-[10vw]">
+                {/* Websites Section */}
+                <div className="relative group transition duration-300">
+                    <Link
+                        href="/portfolio/websites"
+                        className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                    >
+                        <Image
+                            className="w-full h-[40vh] object-cover"
+                            src={WebsiteImage}
+                            alt="Websites Portfolio"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+                            Websites
+                        </div>
+                    </Link>
                 </div>
 
-                <div className="relative">
-                    <Link href={"/portfolio/applications"} className="absolute text-white bottom-10 left-5 font-semibold">Applications</Link>
-                    <Image className="w-[40vw] h-[40vh]" src={ApplicationsImage} alt="not found"/>
+                {/* Applications Section */}
+                <div className="relative group transition duration-300">
+                    <Link
+                        href="/portfolio/applications"
+                        className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                    >
+                        <Image
+                            className="w-full h-[40vh] object-cover"
+                            src={ApplicationsImage}
+                            alt="Applications Portfolio"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
+                            Applications
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Portfolio;
-

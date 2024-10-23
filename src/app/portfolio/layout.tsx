@@ -6,7 +6,7 @@ interface LayoutProps{
 
 const Layout:React.FC<LayoutProps>=({children})=>{
     return(
-        <div className="min-h-screen">
+        <div className="min-h-[70vh]">
             {children}
         </div>
     )

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-[75vh]">
       <div className="container flex flex-col lg:flex-row justify-center items-center gap-x-[10vw]">
         
         <div className="flex flex-col gap-6 max-w-lg text-center lg:text-left">
