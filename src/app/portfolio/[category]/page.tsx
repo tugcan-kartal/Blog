@@ -3,6 +3,7 @@
 import { notFound, useParams } from "next/navigation";
 import React from "react";
 import { products } from "./data";
+import Link from "next/link";
 
 
 const Category:React.FC=()=>{
@@ -30,6 +31,9 @@ const Category:React.FC=()=>{
                         <div className="w-[25vw]">
                             <div>{item.title}</div>
                             <div>{item.desc}</div>
+                            <Link href={item.url}>
+                                To see Project
+                            </Link>
                         </div>
 
                         
