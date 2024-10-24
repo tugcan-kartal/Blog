@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React,{useState} from "react";
 import ContactImage from "@/../public/ContactPage-Contact.svg";
-import { notFound } from "next/navigation";
 
 const Contact:React.FC=()=>{
 
@@ -26,7 +25,7 @@ const Contact:React.FC=()=>{
                 body: JSON.stringify(formData),
             })
 
-            if(response){
+            if(response.status===200){
                 alert("Email sent successfully");
             }else{
                 alert("Email couldnt sent successfully");
