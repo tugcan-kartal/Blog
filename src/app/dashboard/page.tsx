@@ -20,6 +20,13 @@ const Dashboard = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    if (status === "unauthenticated") {
+      router?.push("/dashboard/login");
+    }
+  }, [status, router]);
+
+
+  useEffect(() => {
     const fetchPosts = async () => {
       if (session?.user?.name) {
         try {
@@ -39,13 +46,6 @@ const Dashboard = () => {
   if (status === "loading") {
     return <p>Loading...</p>;
   }
-
-  useEffect(() => {
-    if (status === "unauthenticated") {
-      router.push("/dashboard/login");
-    }
-  }, [status, router]);
-
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
