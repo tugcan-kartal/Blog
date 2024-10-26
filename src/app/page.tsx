@@ -1,30 +1,41 @@
 import Image from "next/image";
-import HeroImage from "@/../public/HomePage-Hero.svg";
 import Link from "next/link";
+import Me from "@/../public/AboutPage-Me.png";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center min-h-[75vh]">
-      <div className="container flex flex-col lg:flex-row justify-center items-center gap-x-[10vw]">
-        
-        <div className="flex flex-col gap-6 max-w-lg text-center lg:text-left">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Better Design for Your Digital Products
-          </h1>
+    <div className="min-h-screen">
+      <div className="flex justify-center items-center mt-[10vh] gap-x-[10vw]">
 
-          <p className="text-base sm:text-lg lg:text-2xl text-gray-600 leading-relaxed">
-            Turning your idea into reality. We bring together the best teams from the global tech industry.
-          </p>
+        <div>
 
-          <Link href="/portfolio">
-            <div className="inline-block bg-blue-600 text-white text-sm sm:text-lg lg:text-xl font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-              See Our Works
+          <div className="flex flex-col gap-y-[2vh]">
+            <div className="text-lg">Software Developer</div>
+            <div className="text-5xl">
+              <div>Hello I'm</div>
+              <div>Tugcan Kartal</div>
             </div>
-          </Link>
+
+            <div className="text-md">
+              <div>With my love for the software world and my experience,</div>
+              <div>I approach every project with excitement and strive</div>
+              <div>to deliver the best user experience possible.</div>
+            </div>
+
+            <div>
+              <Link href={"https://drive.google.com/file/d/1-eGxsicrT1ULDmyJr2ZdiIHbTZxHyNLR/view?usp=sharing"}>DOWNLOAD CV</Link>
+              <div>
+                <Link href={"https://github.com/tugcan-kartal"}>Github</Link>
+                <Link href={"https://www.linkedin.com/in/tugcan-kartal"}>LinkedIn</Link>
+                <Link href={"mailto:tugcankartal01@gmail.com"}>E-mail</Link>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-          <Image src={HeroImage} alt="Hero Image" priority />
+        <div>
+          <Image className="w-[20vw]" src={Me} alt="not found"/>
         </div>
 
       </div>
