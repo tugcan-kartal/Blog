@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Me from "@/../public/AboutPage-Me.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin,FaDownload} from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import CountUp from "react-countup";
 
@@ -27,8 +27,13 @@ export default function Home() {
           {/* Action Buttons and Social Links */}
           <div className="flex flex-col lg:flex-row gap-6 lg:items-center">
             <Link target="_blank" href="https://drive.google.com/file/d/1-eGxsicrT1ULDmyJr2ZdiIHbTZxHyNLR/view?usp=sharing" passHref>
-              <button className="bg-blue-700 text-white text-lg px-8 py-4 rounded-full font-medium hover:bg-blue-800 transition duration-200 shadow-md">
-                Download CV
+              <button className="flex items-center gap-x-[0.5vw] bg-blue-700 text-white text-lg px-8 py-4 rounded-full font-medium hover:bg-blue-800 transition duration-200 shadow-md">
+                <div>
+                  Download CV
+                </div>
+                <div>
+                  <FaDownload  />
+                </div>
               </button>
             </Link>
 
