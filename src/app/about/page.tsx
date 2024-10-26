@@ -24,7 +24,7 @@ const About:React.FC=()=>{
                                 I approach every project with excitement and strive
                                 to deliver the best user experience possible.
                             </div>
-                            <div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 {[
                                     {title: "Full Stack Developer",company: "Citio",date: "08/2024-Present",desc:"building hotel website"},
                                     {title: "Software Engineer Intern",company: "Dipnot Software",date: "07/2023-09/2023",desc:"I undertook the task of updating a car parts sales website, necessitating a comprehensive transformation. In the course of rebuilding the site"},
