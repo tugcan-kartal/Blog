@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close'; // Kapatma ikonu ekleniyor
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,23 +18,22 @@ const Navbar: React.FC = () => {
     ];
 
     return (
-        <div className="relative">
-            <div className="flex justify-between px-[3vw] py-[3vh] bg-white shadow-md rounded-md">
+        <nav className="relative bg-white shadow-md">
+            <div className="flex justify-between items-center px-6 py-4 max-w-screen-xl mx-auto">
+                <Link href="/" className="text-2xl font-bold text-blue-700 hover:text-blue-800 transition duration-300">
+                    Tugcan
+                </Link>
 
-                <div>
-                    <Link href={"/"} className="text-2xl font-semibold text-blue-700">Tugcan</Link>
-                </div>
-
-                <div className="hidden md:flex gap-x-[2vw]">
+                <div className="hidden md:flex space-x-6">
                     {data.map((item, index) => (
-                        <div key={index}>
-                            <Link href={item.url} className="text-gray-700 text-lg font-semibold hover:text-blue-600 transition duration-300">{item.title}</Link>
-                        </div>
+                        <Link key={index} href={item.url} className="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">
+                            {item.title}
+                        </Link>
                     ))}
                 </div>
 
                 <div className="md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)}>
+                    <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 hover:text-blue-600 transition duration-300">
                         {isOpen ? <CloseIcon /> : <MenuIcon />}
                     </button>
                 </div>
@@ -42,7 +41,7 @@ const Navbar: React.FC = () => {
 
             {/* Mobil Menü */}
             {isOpen && (
-                <div className="md:hidden flex flex-col bg-gray-50 shadow-lg rounded-lg mt-2 p-4">
+                <div className="md:hidden flex flex-col bg-white shadow-lg rounded-lg mt-2 p-4">
                     {data.map((item, index) => (
                         <Link key={index} href={item.url}>
                             <div className="py-2 text-lg text-gray-800 hover:text-blue-600 transition duration-300">{item.title}</div>
@@ -50,7 +49,7 @@ const Navbar: React.FC = () => {
                     ))}
                 </div>
             )}
-        </div>
+        </nav>
     );
 }
 
