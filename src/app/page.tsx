@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Me from "@/../public/AboutPage-Me.png";
+import { FaGithub,FaLinkedin  } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="">
       <div className="flex justify-center items-center mt-[10vh] gap-x-[10vw]">
 
         <div>
@@ -25,9 +27,16 @@ export default function Home() {
             <div>
               <Link href={"https://drive.google.com/file/d/1-eGxsicrT1ULDmyJr2ZdiIHbTZxHyNLR/view?usp=sharing"}>DOWNLOAD CV</Link>
               <div>
-                <Link href={"https://github.com/tugcan-kartal"}>Github</Link>
-                <Link href={"https://www.linkedin.com/in/tugcan-kartal"}>LinkedIn</Link>
-                <Link href={"mailto:tugcankartal01@gmail.com"}>E-mail</Link>
+                <Link href={"https://github.com/tugcan-kartal"}>
+                  <FaGithub />
+                </Link>
+
+                <Link href={"https://www.linkedin.com/in/tugcan-kartal"}>
+                  <FaLinkedin />
+                </Link>
+                <Link href={"mailto:tugcankartal01@gmail.com"}>
+                  <SiGmail />
+                </Link>
               </div>
             </div>
           </div>
@@ -36,6 +45,30 @@ export default function Home() {
 
         <div>
           <Image className="w-[20vw]" src={Me} alt="not found"/>
+        </div>
+
+      </div>
+
+      <div className="flex justify-center items-center gap-x-[5vw] mt-[10vh]">
+
+        <div className="flex">
+          <div>5</div>
+          <div>Years of experience</div>
+        </div>
+
+        <div className="flex">
+          <div>40</div>
+          <div>Projects completed</div>
+        </div>
+
+        <div className="flex">
+          <div>8</div>
+          <div>Technologies mastered</div>
+        </div>
+
+        <div className="flex">
+          <div>500</div>
+          <div>code commits</div>
         </div>
 
       </div>
