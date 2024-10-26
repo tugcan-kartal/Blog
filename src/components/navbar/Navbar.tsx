@@ -19,16 +19,16 @@ const Navbar: React.FC = () => {
 
     return (
         <div className="relative">
-            <div className="flex justify-between p-4 bg-white shadow-md rounded-md">
+            <div className="flex justify-between px-[3vw] py-[3vh] bg-white shadow-md rounded-md">
 
                 <div>
-                    <Link href={"/"} className="text-xl font-semibold">Tugcan</Link>
+                    <Link href={"/"} className="text-2xl font-semibold text-blue-700">Tugcan</Link>
                 </div>
 
                 <div className="hidden md:flex gap-x-[2vw]">
                     {data.map((item, index) => (
                         <div key={index}>
-                            <Link href={item.url} className="text-gray-700 hover:text-blue-600 transition duration-300">{item.title}</Link>
+                            <Link href={item.url} className="text-gray-700 text-lg font-semibold hover:text-blue-600 transition duration-300">{item.title}</Link>
                         </div>
                     ))}
                 </div>
