@@ -16,10 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-[80vw] mx-auto">
+      <body className="bg-gray-50 text-gray-900 antialiased">
         <SessionProvider>
           <Navbar />
-          {children}
+          <main className="container mx-auto px-4 lg:px-8 py-8 min-h-screen">
+            {children}
+          </main>
           <Footer />
         </SessionProvider>
       </body>

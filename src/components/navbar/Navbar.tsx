@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
     return (
         <div className="relative">
-            <div className="flex justify-between mt-[5vh] p-4 bg-white shadow-md rounded-md">
+            <div className="flex justify-between p-4 bg-white shadow-md rounded-md">
 
                 <div>
                     <Link href={"/"} className="text-xl font-semibold">Tugcan</Link>
