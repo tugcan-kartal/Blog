@@ -8,7 +8,7 @@ const Portfolio: React.FC = () => {
     return (
         <div className="container mx-auto px-4 mt-[5vh]">
             <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold mb-2">Our Works</h1>
+                <h1 className="text-4xl font-bold mb-2 text-blue-700">Our Works</h1>
                 <p className="text-lg text-gray-600">Choose a gallery</p>
             </div>
 
@@ -29,23 +29,7 @@ const Portfolio: React.FC = () => {
                         </div>
                     </Link>
                 </div>
-
-                {/* Applications Section */}
-                <div className="relative group transition duration-300">
-                    <Link
-                        href={"/portfolio/applications"}
-                        className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                    >
-                        <Image
-                            className="w-full h-[40vh] object-cover"
-                            src={ApplicationsImage}
-                            alt="Applications Portfolio"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-                            Applications
-                        </div>
-                    </Link>
-                </div>
+                
             </div>
         </div>
     );
