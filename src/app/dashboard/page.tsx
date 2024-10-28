@@ -94,14 +94,14 @@ const Dashboard = () => {
     return (
         <div className="flex flex-col items-center justify-center p-6 space-y-8">
             <div className="cursor-pointer bg-red-500 p-2 rounded-2xl text-white font-semibold text-sm" onClick={()=>signOut()}>Sign Out</div>
-            <div className="w-full max-w-4xl">
+            <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-6 max-w-5xl">
             {isLoading ? (
                 <p className="text-center text-gray-500">Loading...</p>
             ) : (
                 posts?.map((post) => (
                 <div
                     key={post._id}
-                    className="bg-white shadow-md rounded-lg overflow-hidden mb-6"
+                    className="bg-white shadow-md rounded-lg overflow-hidden mb-6 hover:shadow-2xl hover:scale-105 transition-all duration-200"
                 >
                     <div className="relative w-full h-48">
                     <Image
@@ -148,17 +148,17 @@ const Dashboard = () => {
                     <input
                     type="text"
                     placeholder="Image URL"
-                    className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <textarea
                     placeholder="Content"
                     cols={30}
                     rows={10}
-                    className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     ></textarea>
                     <button
                     type="submit"
-                    className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
                     >
                     Send
                     </button>
