@@ -1,14 +1,22 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
 
 const Register = () => {
+  const router = useRouter();
+  const {data: session,status}=useSession();
+
   const [infos, setInfos] = useState({ username: "", email: "", password: "" });
   const [errorMessages, setErrorMessages] = useState("");
   const [pending, setPending] = useState(false);
 
-  const router = useRouter();
+  useEffect(()=>{
+    if(session){
+      router.push("/dashboard");
+    }
+  },[session])
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
