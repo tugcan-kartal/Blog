@@ -3,9 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Me from "@/../public/AboutPage-Me.png";
+import CountUp from "react-countup";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import CountUp from "react-countup";
+import { FaLaptopCode } from "react-icons/fa";
+import { PiProjectorScreenBold } from "react-icons/pi";
+import { GrTechnology } from "react-icons/gr";
+import { FaCodeCommit } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
@@ -78,16 +83,17 @@ export default function Home() {
       {/* Statistics Section */}
       <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 mt-16 max-w-6xl w-full flex justify-center items-center flex-wrap">
         {[
-          { end: 5, label: "Years of Experience" },
-          { end: 40, label: "Projects Completed" },
-          { end: 8, label: "Technologies Mastered" },
-          { end: 500, label: "Code Commits" },
+          { end: 5, label: "Years of Experience",img: <FaLaptopCode /> },
+          { end: 40, label: "Projects Completed",img: <PiProjectorScreenBold />},
+          { end: 8, label: "Technologies Mastered",img: <GrTechnology />},
+          { end: 500, label: "Code Commits",img: <FaCodeCommit />},
         ].map((stat) => (
           <div key={stat.label} className="flex flex-col items-center mx-4 mb-6">
             <div className="text-5xl text-blue-700">
               <CountUp start={0} end={stat.end} duration={4} />
             </div>
             <div className="text-xl text-gray-700 font-semibold">{stat.label}</div>
+            <div className="text-3xl text-blue-700">{stat.img}</div>
           </div>
         ))}
       </div>
