@@ -8,7 +8,7 @@ const Portfolio: React.FC = () => {
     return (
         <div className="container mx-auto px-4 mt-[5vh]">
             <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold mb-2 text-blue-700">Our Works</h1>
+                <h1 className="text-4xl font-bold mb-2 text-blue-700">My Portfolio</h1>
                 <p className="text-lg text-gray-600">Choose a gallery</p>
             </div>
 
@@ -25,7 +25,7 @@ const Portfolio: React.FC = () => {
                             alt="Websites Portfolio"
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white font-semibold opacity-0 group-hover:opacity-100 transition duration-300">
-                            Websites
+                            Projects
                         </div>
                     </Link>
                 </div>

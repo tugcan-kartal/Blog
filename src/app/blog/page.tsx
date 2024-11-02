@@ -29,7 +29,7 @@ const Blog=async()=>{
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
         {data.map((item) => (
             <Link href={`/blog/${item._id}`} key={item._id} className="group">
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+            <div className="bg-white w-[20vw] mx-auto shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
                 <div className="relative">
                 <Image
                     src={item.img}
@@ -41,7 +41,7 @@ const Blog=async()=>{
                 />
                 </div>
                 <div className="p-6">
-                <h1 className="text-2xl font-semibold text-gray-900 group-hover:text-indigo-600">
+                <h1 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-800">
                     {item.title}
                 </h1>
                 <p className="text-gray-500 mt-3">{item.desc}</p>

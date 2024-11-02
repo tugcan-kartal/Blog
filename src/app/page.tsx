@@ -17,23 +17,23 @@ export default function Home() {
         {/* Profile Section */}
         <div className="flex-1 bg-white rounded-2xl shadow-lg p-6 lg:p-4 2xl:p-7 transition-transform duration-300 hover:scale-105 flex flex-col">
           <div className="text-center lg:text-left">
-            <div className="text-blue-600 text-lg uppercase font-semibold mb-2">
+            <div className="text-blue-600 text-lg uppercase font-semibold mb-2 text-center">
               Software Developer
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">
-              <div>Hello, I'm</div>
-              <div className="text-blue-700">Tugcan Kartal</div>
+              <div className="text-center">Hello, I'm</div>
+              <div className="text-blue-700 text-center">Tugcan Kartal</div>
             </h1>
 
-            <p className="text-gray-600 leading-relaxed text-base max-w-lg mb-4">
+            <p className="text-gray-600 leading-relaxed text-base max-w-lg mb-4 text-center">
               With my love for the software world and my experience, I approach
               every project with excitement and strive to deliver the best user
               experience possible.
             </p>
 
             {/* Action Buttons and Social Links */}
-            <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
+            <div className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center">
               <Link
                 target="_blank"
                 href="https://drive.google.com/file/d/1-eGxsicrT1ULDmyJr2ZdiIHbTZxHyNLR/view?usp=sharing"
