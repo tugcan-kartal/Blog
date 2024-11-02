@@ -129,7 +129,7 @@ const About: React.FC = () => {
                 {/* Header */}
                 <div className="mb-8 text-center">
                   <h2 className="text-3xl font-semibold text-blue-800">
-                    My education
+                    My Education
                   </h2>
                   <p className="text-gray-600 mt-2">
                     With my love for the software world and my experience, I
@@ -212,7 +212,7 @@ const About: React.FC = () => {
             <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-md p-10">
               {/* Header */}
               <div className="mb-10 text-center">
-                <h2 className="text-4xl font-bold text-blue-800">
+                <h2 className="text-3xl font-bold text-blue-800">
                   My Skills
                 </h2>
                 <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
@@ -260,7 +260,10 @@ const About: React.FC = () => {
               <div>
                 <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">About Me</h2>
                 <p className="text-gray-600 leading-relaxed text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita dolorum quae fugit odit quas omnis obcaecati cupiditate facere blanditiis quisquam nisi harum repudiandae possimus mollitia, numquam odio id consectetur!
+                  Hello, I'm Tugcan Kartal, a passionate software developer.
+                  With my love for the software world and my experience,
+                  I approach every project with excitement and strive
+                  to deliver the best user experience possible.                
                 </p>
               </div>
         
@@ -299,28 +302,28 @@ const About: React.FC = () => {
           <div
             onClick={(e) => changeOption(e)}
             id="experience"
-            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] cursor-pointer bg-white text-blue-700 border-2 border-blue-700 hover:text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Experience
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="education"
-            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] cursor-pointer bg-white text-blue-700 border-2 border-blue-700 hover:text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Education
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="skills"
-            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] cursor-pointer bg-white text-blue-700 border-2 border-blue-700 hover:text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Skills
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="about-me"
-            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] cursor-pointer bg-white text-blue-700 border-2 border-blue-700 hover:text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             About Me
           </div>

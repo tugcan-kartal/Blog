@@ -91,21 +91,17 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { end: 5, label: "Years of Experience", img: <FaLaptopCode /> },
-              {
-                end: 40,
-                label: "Projects Completed",
-                img: <PiProjectorScreenBold />,
-              },
+              { end: 5, label: "Years of Experience", img: <FaLaptopCode />,prefix: "+" },
+              {end: 38,label: "Projects Completed",img: <PiProjectorScreenBold /> },
               { end: 8, label: "Technologies Mastered", img: <GrTechnology /> },
-              { end: 500, label: "Code Commits", img: <FaCodeCommit /> },
+              { end: 415, label: "Code Contributions ", img: <FaCodeCommit /> },
             ].map((stat) => (
               <div
                 key={stat.label}
                 className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
               >
                 <div className="text-5xl text-blue-700 mb-2">
-                  <CountUp start={0} end={stat.end} duration={4} />
+                  <CountUp start={0} end={stat.end} duration={4} prefix={stat.prefix || ""}/>
                 </div>
                 <div className="text-lg text-gray-700 font-semibold text-center mb-1">
                   {stat.label}
