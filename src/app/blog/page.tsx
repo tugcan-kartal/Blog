@@ -37,6 +37,7 @@ const Blog=async()=>{
                     width={400}
                     height={250}
                     className="w-full h-64 object-cover"
+                    unoptimized
                 />
                 </div>
                 <div className="p-6">

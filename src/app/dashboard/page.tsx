@@ -110,6 +110,7 @@ const Dashboard = () => {
                         layout="fill"
                         objectFit="cover"
                         className="w-full h-full object-cover"
+                        unoptimized
                     />
                     </div>
                     <div className="p-6">

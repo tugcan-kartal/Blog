@@ -72,6 +72,7 @@ const BlogPost = async ({ params }: Params) => {
                         width={60}
                         height={60}
                         className="rounded-full object-cover"
+                        unoptimized
                     />
                     <span className="text-gray-700 font-medium text-lg">
                         By {data.username}
@@ -81,7 +82,7 @@ const BlogPost = async ({ params }: Params) => {
 
             {/* Büyük Ana Görsel */}
             <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-lg">
-                <Image src={data.img} alt={data.title} fill={true} className="object-cover" />
+                <Image src={data.img} alt={data.title} fill={true} className="object-cover" unoptimized />
             </div>
 
             {/* İçerik Bölümü */}

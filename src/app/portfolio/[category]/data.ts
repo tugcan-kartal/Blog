@@ -3,7 +3,7 @@ export const products={
         {
             id: 1,
             title: "Newai",
-            desc: "Interactive news site with artificial intelligence called newai.",
+            desc: "Interactive news site with artificial intelligence called newai.You can ask news-related questions to artificial intelligence",
             image: "https://r.resimlink.com/2VUzJM.jpeg",
             url: "https://66a113b6c0cd8e423184f7e7--classy-donut-34f99c.netlify.app/"
         },
@@ -24,7 +24,7 @@ export const products={
         {
             id: 4,
             title: "Citio",
-            desc: "İstanbul Hotel website",
+            desc: "Site that arranges events, tours and hotels in Istanbul. It can be updated by employers from the panel.",
             image: "https://r.resimlink.com/kiPExoq.png",
             url: "https://citioapp.com"
         },
