@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
 
     const data = [
         { title: "Home", url: "/" },
+        { title: "Services", url: "/services" },
         { title: "Portfolio", url: "/portfolio" },
         { title: "Blog", url: "/blog" },
         { title: "About", url: "/about" },
