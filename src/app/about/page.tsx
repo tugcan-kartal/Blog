@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Me from "@/../public/AboutPage-Me.png";
 import Image from "next/image";
 
 import CitioLogo from "@/../public/AboutPage-CitioLogo.jpeg";
@@ -44,8 +43,8 @@ const About: React.FC = () => {
           <div className="bg-gray-50 py-10 px-4">
             <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
               {/* Header */}
-              <div className="mb-8">
-                <h2 className="text-3xl font-semibold text-blue-700">
+              <div className="mb-8 text-center">
+                <h2 className="text-3xl font-semibold text-blue-800">
                   My Experience
                 </h2>
                 <p className="text-gray-600 mt-2">
@@ -107,7 +106,7 @@ const About: React.FC = () => {
                         className="rounded-full mr-4"
                       />
                       <div>
-                        <h4 className="text-blue-700 font-semibold text-xl">
+                        <h4 className="text-blue-800 font-semibold text-xl">
                           {job.title}
                         </h4>
                         <div className="text-gray-500 text-sm">
@@ -128,8 +127,8 @@ const About: React.FC = () => {
             <div className="bg-gray-50 py-10 px-4">
               <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
                 {/* Header */}
-                <div className="mb-8">
-                  <h2 className="text-3xl font-semibold text-blue-700">
+                <div className="mb-8 text-center">
+                  <h2 className="text-3xl font-semibold text-blue-800">
                     My education
                   </h2>
                   <p className="text-gray-600 mt-2">
@@ -191,7 +190,7 @@ const About: React.FC = () => {
                           className="rounded-full mr-4"
                         />
                         <div>
-                          <h4 className="text-blue-700 font-semibold text-xl">
+                          <h4 className="text-blue-800 font-semibold text-xl">
                             {job.title}
                           </h4>
                           <div className="text-gray-500 text-sm">
@@ -214,7 +213,7 @@ const About: React.FC = () => {
               {/* Header */}
               <div className="mb-10 text-center">
                 <h2 className="text-4xl font-bold text-blue-800">
-                  My Education
+                  My Skills
                 </h2>
                 <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
                   Fueled by my passion for software and extensive experience, I approach each project with excitement, aiming to deliver the best possible user experience.
@@ -259,8 +258,8 @@ const About: React.FC = () => {
             <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 space-y-8">
               {/* About Me Section */}
               <div>
-                <h2 className="text-3xl font-bold text-blue-800 mb-4">About Me</h2>
-                <p className="text-gray-600 leading-relaxed">
+                <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">About Me</h2>
+                <p className="text-gray-600 leading-relaxed text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita dolorum quae fugit odit quas omnis obcaecati cupiditate facere blanditiis quisquam nisi harum repudiandae possimus mollitia, numquam odio id consectetur!
                 </p>
               </div>
@@ -294,39 +293,41 @@ const About: React.FC = () => {
 
   return (
     <div>
-      <div className="flex">
-        <div className="flex flex-col gap-y-[1vh]">
+      <div className="flex flex-col">
+
+        <div className="flex flex-col items-center gap-y-2">
           <div
             onClick={(e) => changeOption(e)}
             id="experience"
-            className="bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Experience
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="education"
-            className="bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Education
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="skills"
-            className="bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             Skills
           </div>
           <div
             onClick={(e) => changeOption(e)}
             id="about-me"
-            className="bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
+            className="w-[25vw] bg-blue-600 text-white py-2 px-[2vw] rounded-xl flex justify-center font-semibold hover:bg-blue-800 transition duration-200 shadow-md"
           >
             About Me
           </div>
         </div>
 
         <div className="mx-auto">{showElement()}</div>
+
       </div>
     </div>
   );
