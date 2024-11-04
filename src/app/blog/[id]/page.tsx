@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { title } from "process";
+import { FaUser } from "react-icons/fa";
 
 interface Post {
     _id: string;
@@ -64,16 +64,9 @@ const BlogPost = async ({ params }: Params) => {
                 <h1 className="text-5xl font-extrabold text-gray-900 text-center">
                     {data.title}
                 </h1>
-                <p className="text-lg text-gray-500 text-center">{data.desc}</p>
+                <p className="text-lg font-semibold text-gray-500 text-center">{data.desc}</p>
                 <div className="flex items-center space-x-4 mt-4">
-                    <Image
-                        src={data.img}
-                        alt={data.title}
-                        width={60}
-                        height={60}
-                        className="rounded-full object-cover"
-                        unoptimized
-                    />
+                    <FaUser className="text-xl" />
                     <span className="text-gray-700 font-medium text-lg">
                         By {data.username}
                     </span>

@@ -93,41 +93,9 @@ const Dashboard = () => {
   if (status === "authenticated") {
     return (
         <div className="flex flex-col items-center justify-center p-6 space-y-8">
+            <div className="text-xl font-semibold">Welcome {session.user?.name}!</div>
             <div className="cursor-pointer bg-red-500 p-2 rounded-2xl text-white font-semibold text-sm" onClick={()=>signOut()}>Sign Out</div>
-            <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-6 max-w-5xl">
-            {isLoading ? (
-                <p className="text-center text-gray-500">Loading...</p>
-            ) : (
-                posts?.map((post) => (
-                <div
-                    key={post._id}
-                    className="bg-white shadow-md rounded-lg overflow-hidden mb-6 hover:shadow-2xl hover:scale-105 transition-all duration-200"
-                >
-                    <div className="relative w-full h-48">
-                    <Image
-                        src={post.img}
-                        alt={post.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="w-full h-full object-cover"
-                        unoptimized
-                    />
-                    </div>
-                    <div className="p-6">
-                    <h2 className="text-2xl font-semibold text-gray-800">{post.title}</h2>
-                    <p className="text-gray-600 mt-2">{post.desc}</p>
-                    <button
-                        onClick={() => handleDelete(post._id)}
-                        className="text-red-500 hover:text-red-700 mt-4 block text-right"
-                    >
-                        Delete
-                    </button>
-                    </div>
-                </div>
-                ))
-            )}
-            </div>
-        
+
             <form
             onSubmit={handleSubmit}
             className="w-[50vw] max-w-4xl bg-white shadow-md rounded-lg p-8 space-y-6"
@@ -165,6 +133,42 @@ const Dashboard = () => {
                     </button>
                 </div>
             </form>
+
+            <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-6 max-w-5xl">
+            {isLoading ? (
+                <p className="text-center text-gray-500">Loading...</p>
+            ) : (
+                posts?.map((post) => (
+                <div
+                    key={post._id}
+                    className="bg-white shadow-md rounded-lg overflow-hidden mb-6 hover:shadow-2xl hover:scale-105 transition-all duration-200"
+                >
+                    <div className="relative w-full h-48">
+                    <Image
+                        src={post.img}
+                        alt={post.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="w-full h-full object-cover"
+                        unoptimized
+                    />
+                    </div>
+                    <div className="p-6">
+                    <h2 className="text-2xl font-semibold text-gray-800">{post.title}</h2>
+                    <p className="text-gray-600 mt-2">{post.desc}</p>
+                    <button
+                        onClick={() => handleDelete(post._id)}
+                        className="text-red-500 hover:text-red-700 mt-4 block text-right"
+                    >
+                        Delete
+                    </button>
+                    </div>
+                </div>
+                ))
+            )}
+            </div>
+        
+            
         </div>
     );
   }
