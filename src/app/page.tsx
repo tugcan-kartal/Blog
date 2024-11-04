@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Me from "@/../public/AboutPage-Me.png";
 import CountUp from "react-countup";
-import { FaGithub, FaLinkedin, FaDownload, FaLaptopCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium ,FaDownload, FaLaptopCode } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { PiProjectorScreenBold } from "react-icons/pi";
 import { GrTechnology } from "react-icons/gr";
@@ -52,6 +52,13 @@ export default function Home() {
                   className="hover:text-blue-700 transition"
                 >
                   <FaGithub />
+                </Link>
+                <Link
+                  target="_blank"
+                  href="https://medium.com/@tugcankartal"
+                  className="hover:text-blue-700 transition"
+                >
+                  <FaMedium />
                 </Link>
                 <Link
                   target="_blank"
