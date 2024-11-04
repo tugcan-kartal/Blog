@@ -40,7 +40,7 @@ const Category: React.FC = () => {
             <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
             <Slider {...settings} className="lg:w-[25vw] mx-auto">
                 {datas && datas.map((item, index) => (
-                    <div  key={index} className="bg-white rounded-lg shadow-xl overflow-hidden transition-transform transform hover:scale-105 duration-300">
+                    <div  key={index} className="bg-white rounded-lg  overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
                             <img src={item.image} alt={item.title} className="w-full h-64 object-cover rounded-t-lg" />
                             <div className="absolute top-0 left-0 p-4 bg-blue-600 text-white rounded-br-lg">

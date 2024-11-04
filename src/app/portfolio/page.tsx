@@ -20,7 +20,7 @@ const Portfolio: React.FC = () => {
                         className="block overflow-hidden rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                     >
                         <Image
-                            className="w-full h-[40vh] object-cover"
+                            className="w-full h-[50vh] object-cover"
                             src={WebsiteImage}
                             alt="Websites Portfolio"
                         />

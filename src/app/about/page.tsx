@@ -48,9 +48,7 @@ const About: React.FC = () => {
                   My Experience
                 </h2>
                 <p className="text-gray-600 mt-2">
-                  With my love for the software world and my experience, I
-                  approach every project with excitement and strive to deliver
-                  the best user experience possible.
+                  With a passion for software development and a wealth of experience, I approach each project with enthusiasm, aiming to deliver exceptional user experiences and innovative solutions.
                 </p>
               </div>
 
@@ -61,35 +59,35 @@ const About: React.FC = () => {
                     title: "Full Stack Developer",
                     company: "Citio",
                     date: "08/2024 - Present",
-                    desc: "Building hotel website",
+                    desc: "At Citio, I contributed to developing a comprehensive platform that facilitates the management and customization of events, tours, and hotel packages specifically for Istanbul. My role involved both backend and frontend responsibilities, ensuring a seamless experience for our clients.On the server side, we focused on creating a robust panel for employers, empowering them to update and modify their offerings effortlessly. This included implementing secure data management practices, optimizing server performance, and designing a flexible backend structure to handle frequent updates. On the client side, I took part in adding new features and plugins that enhanced user interaction and functionality. My contributions here ensured that the end-users had a smooth and engaging experience when exploring the diverse services offered on the platform. Through these combined efforts, I supported Citio’s mission to provide a dynamic and user-friendly environment for its customers and clients alike.",
                     img: CitioLogo,
                   },
                   {
                     title: "Software Engineer Intern",
                     company: "Dipnot Software",
                     date: "07/2023 - 09/2023",
-                    desc: "I undertook the task of updating a car parts sales website, necessitating a comprehensive transformation.",
+                    desc: "I undertook the task of updating a car parts sales website, necessitating a comprehensive transformation. In the course of rebuilding the site, my focus was on modernizing the interface by replacing outdated designs and visuals with a dynamic and technologically advanced aesthetic. To achieve this, I leveraged Tailwind, a framework known for its technology compatibility and innovative design elements, ensuring a contemporary and polished appearance. For effective data management, I implemented MongoDB as the database solution. Additionally, in conjunction with ReactJS, I integrated the Redux technology, acquired through my experiences within the company, to establish a dynamic user interface with seamless data flow. This not only elevated the overall performance of the website but also contributed to an enhanced user experience through cutting-edge design principles and streamlined data handling.",
                     img: DipnotLogo,
                   },
                   {
                     title: "Software Engineer",
                     company: "Mipos Technology",
                     date: "05/2023 - 07/2023",
-                    desc: "Expanded our existing website, mipos.com, with an admin panel and a customer email showcase.",
+                    desc: "I expanded the functionality of our existing website, mipos.com, by incorporating an admin panel and creating an elegant interface to showcase customer emails. Furthermore, drawing inspiration from the distributorship of SambaPOS, I spearheaded the establishment of a new business avenue for the company with the creation of the EasOrder website. This platform serves as a focal point for advertising, introducing, and marketing our restaurant POS software system. To enhance user engagement and gather valuable feedback, I implemented a feedback form on the website. Subsequently, I directed the messages received through this form to the company partner's email account, ensuring efficient communication. These initiatives were undertaken to contribute to the professional growth and success of the company, and I am confident that they can significantly bolster our capabilities in the dynamic landscape of the restaurant POS software market.",
                     img: MiposLogo,
                   },
                   {
                     title: "Software Engineer Intern",
                     company: "Piton Technology",
                     date: "09/2022 - 03/2023",
-                    desc: "Worked on the Smart Transportation Platform ALFA System, consolidating resources.",
+                    desc: "During my internship at PİTON Technology, I had the opportunity to work on the Smart Transportation Platform ALFA System, which consolidates all resources of transportation enterprises on a single platform. This platform processes system inputs with smart technologies, offering products designed to meet the expectations of stakeholders and ensuring sustainable transportation. This experience enabled me to work on the latest technologies and play a role in creating innovative solutions for sustainable and efficient transportation systems.",
                     img: PitonLogo,
                   },
                   {
                     title: "Software Engineer Intern",
                     company: "Evobulut",
                     date: "06/2022 - 08/2022",
-                    desc: "Designed a system for monitoring customer activities, including calls, visits, and emails.",
+                    desc: "I designed a comprehensive system for monitoring customer activities, including calls, visits, and emails, providing a streamlined approach to efficient customer relationship management. My initiatives extended to optimizing the invoicing process, ensuring the swift creation of invoices while closely overseeing the entirety of accounting procedures. In response to the company's needs, I engineered a rapid and intuitive sales tracking program. This solution consolidates control over all operational facets onto a singular platform, fostering seamless and effective management of various processes. My role in these projects not only deepened my technical proficiency but also demonstrated my commitment to delivering impactful solutions in a dynamic work environment.",
                     img: EvobulutLogo,
                   },
                 ].map((job, index) => (
@@ -132,9 +130,7 @@ const About: React.FC = () => {
                     My Education
                   </h2>
                   <p className="text-gray-600 mt-2">
-                    With my love for the software world and my experience, I
-                    approach every project with excitement and strive to deliver
-                    the best user experience possible.
+                    I have a solid academic background in computer science, which has equipped me with the technical skills and theoretical knowledge necessary for effective software development. My studies focused on areas such as programming, algorithms fostering a strong foundation that I apply in real-world projects.
                   </p>
                 </div>
   
@@ -216,8 +212,7 @@ const About: React.FC = () => {
                   My Skills
                 </h2>
                 <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-                  Fueled by my passion for software and extensive experience, I approach each project with excitement, aiming to deliver the best possible user experience.
-                </p>
+                  Driven by a passion for software development and extensive experience, I tackle each project with enthusiasm, striving to create optimal user experiences.                </p>
               </div>
         
               {/* Education Grid */}

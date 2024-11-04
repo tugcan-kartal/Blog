@@ -30,7 +30,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="py-16 px-4 bg-gray-50">
+        <div className="py-5 px-4 bg-gray-50">
             <h1 className="text-4xl font-bold text-center text-blue-700 mb-8">Our Services</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 {data.map((item) => (

@@ -13,7 +13,7 @@ import { FaCodeCommit } from "react-icons/fa6";
 export default function Home() {
   return (
     <div className="bg-gray-50 flex flex-col items-center py-1 px-4">
-      <div className="flex flex-col justify-center items-center lg:flex-row gap-8 max-w-6xl w-full">
+      <div className="flex flex-col justify-center items-center  gap-8 max-w-6xl w-full">
         {/* Profile Section */}
         <div className="flex-1 bg-white rounded-2xl shadow-lg p-6 lg:p-4 2xl:p-7 transition-transform duration-300 hover:scale-105 flex flex-col">
           <div className="text-center lg:text-left">

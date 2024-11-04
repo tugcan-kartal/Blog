@@ -24,7 +24,7 @@ export const products={
         {
             id: 4,
             title: "Citio",
-            desc: "Site that arranges events, tours and hotels in Istanbul. It can be updated by employers from the panel.",
+            desc: "A site that allows you to easily arrange events, tours, and hotels in Istanbul. Users can browse options to find services that suit their needs.",
             image: "https://r.resimlink.com/kiPExoq.png",
             url: "https://citioapp.com"
         },
