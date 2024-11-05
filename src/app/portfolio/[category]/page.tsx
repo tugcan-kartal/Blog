@@ -43,7 +43,7 @@ const Category: React.FC = () => {
                 {datas && datas.map((item, index) => (
                     <div  key={index} className="bg-white rounded-lg  overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <Image src={item.image} alt={item.title} className="w-full h-64 object-cover rounded-t-lg" />
+                            <Image unoptimized width={800} height={800} src={item.image} alt={item.title} className="object-cover rounded-t-lg" />
                             <div className="absolute top-0 left-0 p-4 bg-blue-600 text-white rounded-br-lg">
                                 <h2 className="text-lg font-semibold">{item.title}</h2>
                             </div>

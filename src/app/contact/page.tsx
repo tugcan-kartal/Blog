@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
-                <Image src={ContactImage} alt="Contact Us" />
+                <Image unoptimized src={ContactImage} alt="Contact Us" />
             </div>
         </div>
     );

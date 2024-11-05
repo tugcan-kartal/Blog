@@ -97,6 +97,7 @@ const About: React.FC = () => {
                   >
                     <div className="flex items-center mb-4">
                       <Image
+                        unoptimized
                         alt={`${job.company} Logo`}
                         src={job.img}
                         width={40}
@@ -179,6 +180,7 @@ const About: React.FC = () => {
                     >
                       <div className="flex items-center mb-4">
                         <Image
+                          unoptimized
                           alt={`${job.company} Logo`}
                           src={job.img}
                           width={40}

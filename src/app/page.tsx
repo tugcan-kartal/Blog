@@ -81,6 +81,7 @@ export default function Home() {
           {/* Profile Image */}
           <div className="mt-4 lg:mt-6 flex justify-center">
             <Image
+              unoptimized
               className="rounded-full shadow-lg border-4 border-blue-300 hover:scale-105 transition-transform duration-300"
               src={Me}
               alt="Tugcan Kartal"
