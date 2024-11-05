@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <div className="hidden md:flex space-x-6">
+                    <DarkModeToggle />
                     {data.map((item, index) => (
                         <Link key={index} href={item.url} className="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">
                             {item.title}

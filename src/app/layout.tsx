@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { SessionProvider } from "next-auth/react";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,13 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50  antialiased">
-        <SessionProvider>
-          <Navbar />
-          <main className="container mx-auto px-4 lg:px-8 py-8 min-h-screen">
-            {children}
-          </main>
-          <Footer />
-        </SessionProvider>
+        <ThemeProvider>
+          <SessionProvider>
+            <Navbar />
+            <main className="container mx-auto px-4 lg:px-8 py-8 min-h-screen">
+              {children}
+            </main>
+            <Footer />
+          </SessionProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

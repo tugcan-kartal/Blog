@@ -19,3 +19,20 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* ThemeContext için */
+.theme{
+  transition: 1s all ease;
+}
+
+.light {
+  background-color: white;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
+}
+/* ------------------ */
