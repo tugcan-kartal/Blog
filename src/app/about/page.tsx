@@ -255,7 +255,7 @@ const About: React.FC = () => {
               <div>
                 <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">About Me</h2>
                 <p className="text-gray-600 leading-relaxed text-center">
-                  Hello, I'm Tugcan Kartal, a passionate software developer.
+                  Hello, I am Tugcan Kartal, a passionate software developer.
                   With my love for the software world and my experience,
                   I approach every project with excitement and strive
                   to deliver the best user experience possible.                

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+// import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);

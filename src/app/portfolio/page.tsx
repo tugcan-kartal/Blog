@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import WebsiteImage from "@/../public/PortfolioPage-Websites.jpg";
-import ApplicationsImage from "@/../public/PortfolioPage-Applications.jpg";
 import Link from "next/link";
 
 const Portfolio: React.FC = () => {

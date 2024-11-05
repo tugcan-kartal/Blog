@@ -7,6 +7,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const Category: React.FC = () => {
     const params = useParams();
@@ -23,7 +24,7 @@ const Category: React.FC = () => {
 
     const datas = getDatas(categoryName);
 
-    var settings = {
+    let settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -42,7 +43,7 @@ const Category: React.FC = () => {
                 {datas && datas.map((item, index) => (
                     <div  key={index} className="bg-white rounded-lg  overflow-hidden transition-transform transform hover:scale-105 duration-300">
                         <div className="relative">
-                            <img src={item.image} alt={item.title} className="w-full h-64 object-cover rounded-t-lg" />
+                            <Image src={item.image} alt={item.title} className="w-full h-64 object-cover rounded-t-lg" />
                             <div className="absolute top-0 left-0 p-4 bg-blue-600 text-white rounded-br-lg">
                                 <h2 className="text-lg font-semibold">{item.title}</h2>
                             </div>

@@ -22,7 +22,7 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">
-              <div className="text-center">Hello, I'm</div>
+              <div className="text-center">Hello, I am</div>
               <div className="text-blue-700 text-center">Tugcan Kartal</div>
             </h1>
 

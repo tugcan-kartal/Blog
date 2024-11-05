@@ -6,7 +6,8 @@ import { useSession } from "next-auth/react";
 
 const Register = () => {
   const router = useRouter();
-  const {data: session,status}=useSession();
+  // const {data: session,status}=useSession();
+  const {data: session}=useSession();
 
   const [infos, setInfos] = useState({ username: "", email: "", password: "" });
   const [errorMessages, setErrorMessages] = useState("");
@@ -16,7 +17,7 @@ const Register = () => {
     if(session){
       router.push("/dashboard");
     }
-  },[session])
+  },[session,router])
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

@@ -7,7 +7,8 @@ import { useSession } from "next-auth/react";
 
 const Login = () => {
   const router = useRouter();
-  const {data: session,status}=useSession();
+  // const {data: session,status}=useSession();
+  const {data: session}=useSession();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,7 +18,7 @@ const Login = () => {
     if(session){
       router.push("/dashboard");
     }
-  },[session])
+  },[session,router])
 
   const handleCredentialsSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
