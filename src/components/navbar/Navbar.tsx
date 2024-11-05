@@ -27,7 +27,8 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <div className="hidden md:flex space-x-6">
-                    <DarkModeToggle />
+                    {/* <DarkModeToggle /> */} 
+                    {/* Buradan açarsın theme ayarını */}
                     {data.map((item, index) => (
                         <Link key={index} href={item.url} className="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">
                             {item.title}

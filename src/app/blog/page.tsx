@@ -12,15 +12,22 @@ interface Post{
 }
 
 const getData=async():Promise<Post[]>=>{
-    const res=await fetch("http://localhost:3000/api/posts",{
-        cache: "no-store",
-    });
-
-    if(!res.ok){
-        throw new Error("Failed to fetch data");
+    
+    try {
+        const res=await fetch("http://localhost:3000/api/posts",{
+            cache: "no-store",
+        });
+    
+        if(!res.ok){
+            throw new Error("Failed to fetch data from backend");
+        }
+    
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+        throw new Error("An error occurred while fetching posts.");
     }
 
-    return res.json();
 }
 
 const Blog=async()=>{

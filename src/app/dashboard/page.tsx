@@ -73,6 +73,7 @@ const Dashboard = () => {
       setPosts(data);
     } catch (err) {
       console.log(err);
+      throw new Error("dashboard error on handlesubmit")
     }
   };
 
@@ -87,6 +88,7 @@ const Dashboard = () => {
       setPosts(data);
     } catch (err) {
       console.log(err);
+      throw new Error("Dashboard error on handleDelete")
     }
   };
 

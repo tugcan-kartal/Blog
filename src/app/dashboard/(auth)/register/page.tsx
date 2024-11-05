@@ -48,7 +48,8 @@ const Register = () => {
         setErrorMessages("Something went wrong");
       }
     } catch (error) {
-      setErrorMessages("Error occurred");
+      console.log(error);
+      setErrorMessages("Error occurred in register page");
     } finally {
       setPending(false);
     }

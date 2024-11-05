@@ -15,7 +15,8 @@ export const GET = async (request: NextRequest, context: { params: { id: string 
 
         return new NextResponse(JSON.stringify(post), { status: 200 });
     } catch (error) {
-        return new NextResponse("Database Error", { status: 500 });
+        console.log(error);
+        return new NextResponse("Database Error, posts/route.ts check get", { status: 500 });
     }
 };
 
@@ -32,6 +33,7 @@ export const DELETE = async (request: NextRequest, context: { params: { id: stri
 
         return new NextResponse("Post deleted successfully", { status: 200 });
     } catch (error) {
-        return new NextResponse("Database error", { status: 500 });
+        console.log(error);
+        return new NextResponse("Database Error, posts/route.ts check delete", { status: 500 });
     }
 };

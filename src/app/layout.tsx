@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50  antialiased">
-        <ThemeProvider>
+        {/* <ThemeProvider> */}
           <SessionProvider>
             <Navbar />
             <main className="container mx-auto px-4 lg:px-8 py-8 min-h-screen">
@@ -26,7 +26,7 @@ export default function RootLayout({
             </main>
             <Footer />
           </SessionProvider>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
