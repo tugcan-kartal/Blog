@@ -24,7 +24,7 @@ const Category: React.FC = () => {
 
     const datas = getDatas(categoryName);
 
-    let settings = {
+    const settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
