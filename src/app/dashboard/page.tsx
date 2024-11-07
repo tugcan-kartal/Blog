@@ -30,7 +30,7 @@ const Dashboard = () => {
     const fetchPosts = async () => {
       if (session?.user?.name) {
         try {
-          const response = await fetch(`/api/posts?username=${session.user.name}`);
+          const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts?username=${session.user.name}`);
           const data = await response.json();
           setPosts(data);
         } catch (err) {
@@ -56,7 +56,7 @@ const Dashboard = () => {
     const content = (form[3] as HTMLTextAreaElement).value;
 
     try {
-      await fetch("/api/posts", {
+      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {
         method: "POST",
         body: JSON.stringify({
           title,
@@ -68,7 +68,7 @@ const Dashboard = () => {
       });
       form.reset();
       // Yeni veriyi ekledikten sonra tekrar verileri çek
-      const response = await fetch(`/api/posts?username=${session?.user?.name}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts?username=${session?.user?.name}`);
       const data = await response.json();
       setPosts(data);
     } catch (err) {
@@ -79,11 +79,11 @@ const Dashboard = () => {
 
   const handleDelete = async (id: string) => { //mongodbden çekiyor ya verileri burada id atamasakda oradaki _idyi çekiyor zaten aşağıya gösterirkende o idlerden çekti unutma
     try {
-      await fetch(`/api/posts/${id}`, {
+      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts/${id}`, {
         method: "DELETE",
       });
       // Veriyi sildikten sonra tekrar verileri çek
-      const response = await fetch(`/api/posts?username=${session?.user?.name}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts?username=${session?.user?.name}`);
       const data = await response.json();
       setPosts(data);
     } catch (err) {

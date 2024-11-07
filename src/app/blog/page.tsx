@@ -17,7 +17,7 @@ interface Post {
 // Blog component to render posts
 const Blog = async () => {
   // Fetching posts data directly in the component
-  const res = await fetch('/api/posts', { cache: 'no-store' });
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, { cache: 'no-store' });
   const posts: Post[] = await res.json();
 
   return (
