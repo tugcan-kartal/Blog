@@ -16,7 +16,7 @@ interface Post {
 
 const getData = async (id: string): Promise<Post | null> => {
   try {
-    const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    const res = await fetch(`/api/posts/${id}`, {
       cache: "no-store", // Ensures no caching of the response
     });
 
