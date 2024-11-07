@@ -2,8 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import Post from "@/models/Post";
 import connectDB from "@/lib/connect";
 
-export const GET = async (request: NextRequest, context: { params: { id: string } }) => {
-    const { id } = await context.params; // params.id'yi asenkron olarak alıyoruz.
+// URL'den id'yi almak için örnek GET isteği
+export const GET = async (request: NextRequest) => {
+    // URL'yi alıyoruz
+    const url = new URL(request.url);
+    // URL'nin son kısmını alıyoruz
+    const id = url.pathname.split("/").pop(); // '/api/posts/[id]' şeklinde bir yapıdan son kısmı alır
+
+    if (!id) {
+        return new NextResponse("Post ID is missing", { status: 400 });
+    }
 
     try {
         await connectDB();
@@ -20,8 +28,16 @@ export const GET = async (request: NextRequest, context: { params: { id: string 
     }
 };
 
-export const DELETE = async (request: NextRequest, context: { params: { id: string } }) => {
-    const { id } = await context.params; // params.id'yi asenkron olarak alıyoruz.
+// URL'den id'yi almak için örnek DELETE isteği
+export const DELETE = async (request: NextRequest) => {
+    // URL'yi alıyoruz
+    const url = new URL(request.url);
+    // URL'nin son kısmını alıyoruz
+    const id = url.pathname.split("/").pop(); // '/api/posts/[id]' şeklinde bir yapıdan son kısmı alır
+
+    if (!id) {
+        return new NextResponse("Post ID is missing", { status: 400 });
+    }
 
     try {
         await connectDB();
