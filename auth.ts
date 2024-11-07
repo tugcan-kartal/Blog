@@ -8,8 +8,8 @@ import bcrypt from "bcrypt";
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.AUTH_GOOGLE_ID,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
     CredentialsProvider({
       name: "Credentials",
@@ -31,5 +31,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.AUTH_SECRET,
 });
