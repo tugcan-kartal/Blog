@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 import { FaUser } from "react-icons/fa";
 
 interface Post {
@@ -32,8 +32,7 @@ const getData = async (id: string): Promise<Post | null> => {
 };
 
 const BlogPost = () => {
-  const router = useRouter();
-  const { id } = router.query; // Get the 'id' from the URL query params
+  const { id } = useParams(); // Get the 'id' from the URL params
   const [post, setPost] = useState<Post | null>(null); // State to store the post data
   const [loading, setLoading] = useState<boolean>(true); // State to track loading
   const [error, setError] = useState<string | null>(null); // State to handle error
