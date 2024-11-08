@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Portfolio: React.FC = () => {
     return (
-        <div className="container mx-auto px-4 mt-[5vh]">
+        <div className="flex flex-col justify-center md:justify-start items-center mt-[2vh]">
             <div className="text-center mb-10">
                 <h1 className="text-4xl font-bold mb-2 text-blue-700">My Portfolio</h1>
                 <p className="text-lg text-gray-600">Choose a gallery</p>
@@ -22,7 +22,7 @@ const Portfolio: React.FC = () => {
                             unoptimized
                             width={800}
                             height={800}
-                            className="object-cover"
+                            className="object-cover h-[50vh]"
                             src={WebsiteImage}
                             alt="Websites Portfolio"
                         />

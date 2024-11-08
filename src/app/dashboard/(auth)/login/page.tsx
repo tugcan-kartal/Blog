@@ -38,8 +38,8 @@ const Login = () => {
   
 
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="w-full max-w-md  p-8 shadow-lg rounded-lg bg-gray-100">
+    <div className="flex justify-center items-center h-[80vh]">
+      <div className="w-[90vw] max-w-md  p-8 shadow-lg rounded-lg bg-gray-100">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Login</h2>
         
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
@@ -73,7 +73,7 @@ const Login = () => {
             type="submit"
             className="w-full py-2 mt-4 text-white font-semibold rounded-lg bg-blue-500 hover:bg-blue-600 transition-colors"
           >
-            Sign in with Credentials
+            Sign in with email
           </button>
         </form>
 
