@@ -89,7 +89,7 @@ const BlogPost = () => {
 
       {/* Main Image */}
       <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-lg">
-        <Image src={post.img} alt={post.title} fill={true} className="object-cover" unoptimized />
+        <Image src={post.img} alt={post.title} fill={true} className="object-fill" unoptimized />
       </div>
 
       {/* Content Section */}
