@@ -100,7 +100,7 @@ const Dashboard = () => {
 
             <form
             onSubmit={handleSubmit}
-            className="w-[50vw] max-w-4xl bg-white shadow-md rounded-lg p-8 space-y-6"
+            className="md:w-[50vw] w-[80vw] max-w-4xl bg-white shadow-md rounded-lg p-8 space-y-6"
             >
             {/* <form onSubmit={(e)=>{handleSubmit(e)}}> bu şekilde de yazılır */}
 

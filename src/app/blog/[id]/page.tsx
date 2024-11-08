@@ -88,7 +88,7 @@ const BlogPost = () => {
       </div>
 
       {/* Main Image */}
-      <div className="relative w-full h-[600px] rounded-lg overflow-hidden shadow-lg">
+      <div className="relative w-full md:h-[40vh] rounded-lg overflow-hidden shadow-lg">
         <Image src={post.img} alt={post.title} fill={true} className="object-cover" unoptimized />
       </div>
 
