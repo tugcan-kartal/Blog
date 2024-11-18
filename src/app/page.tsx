@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Me from "@/../public/AboutPage-Me.png";
+import Me from "@/../public/AboutPage-Me.jpg";
 import CountUp from "react-countup";
 import { FaGithub, FaLinkedin, FaMedium ,FaDownload, FaLaptopCode } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -85,8 +85,8 @@ export default function Home() {
               className="rounded-full shadow-lg border-4 border-blue-300 hover:scale-105 transition-transform duration-300"
               src={Me}
               alt="Tugcan Kartal"
-              width={250} // Reduced size for better fit
-              height={250}
+              width={200} // Reduced size for better fit
+              height={200}
             />
           </div>
         
