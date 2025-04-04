@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center">
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1WSAl2Zv_p1Phc1xE3--wmgzMbH1EFC4A/view?usp=sharing"
+                href="https://drive.google.com/file/d/15g6YQzjl4gtkYEKyQrtpiG-QXZ9R7I-Q/view?usp=sharing"
                 passHref
               >
                 <button className="flex items-center gap-x-2 bg-blue-700 text-white text-lg px-4 py-2 rounded-full font-medium hover:bg-blue-800 transition duration-200 shadow-md lg:mx-0 mx-auto">
