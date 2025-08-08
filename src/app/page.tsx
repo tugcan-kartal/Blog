@@ -12,10 +12,11 @@ import { FaCodeCommit } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center py-1 px-4">
-      <div className="flex flex-col justify-center items-center  gap-8 max-w-6xl w-full">
+    <div className="flex flex-col items-center pb-1 px-4">
+      <div className="flex flex-col justify-center items-center gap-8 max-w-6xl w-full">
+
         {/* Profile Section */}
-        <div className="flex-1 bg-white rounded-2xl shadow-lg p-6 lg:p-4 2xl:p-7 transition-transform duration-300 hover:scale-105 flex flex-col">
+        <div className="flex-1 bg-white rounded-2xl shadow-lg p-4 lg:p-2 2xl:p-5 transition-transform duration-300 hover:scale-105 flex flex-col">
           <div className="text-center lg:text-left">
             <div className="text-blue-600 text-lg uppercase font-semibold mb-2 text-center">
               Software Developer
@@ -36,7 +37,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center">
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1M2uxaj_wUkxQ5pG-NqGkg-NB6p-s-y2M/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MGHMCXZR6Af8_CGSoLm9MUV6M_kxNFTq/view?usp=sharing"
                 passHref
               >
                 <button className="flex items-center gap-x-2 bg-blue-700 text-white text-lg px-4 py-2 rounded-full font-medium hover:bg-blue-800 transition duration-200 shadow-md lg:mx-0 mx-auto">
@@ -93,14 +94,12 @@ export default function Home() {
         </div>
 
         {/* Statistics Section */}
-        <div className="flex-1 bg-white rounded-2xl shadow-lg p-6 lg:p-8 transition-transform duration-300 hover:scale-105">
-          <h2 className="text-2xl lg:text-3xl font-semibold text-blue-700 mb-4 text-center">
-            Statistics
-          </h2>
+        <div className="flex-1 bg-white rounded-2xl shadow-lg p-4 lg:p-6 transition-transform duration-300 hover:scale-105">
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { end: 5, label: "Years of Experience", img: <FaLaptopCode />,prefix: "+" },
-              {end: 38,label: "Projects Completed",img: <PiProjectorScreenBold /> },
+              { end: 38,label: "Projects Completed",img: <PiProjectorScreenBold /> },
               { end: 8, label: "Technologies Mastered", img: <GrTechnology /> },
               { end: 415, label: "Code Contributions ", img: <FaCodeCommit /> },
             ].map((stat) => (
@@ -121,6 +120,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
