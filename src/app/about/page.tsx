@@ -278,7 +278,7 @@ const About: React.FC = () => {
                 {/* Contact Information */}
                 <div className="bg-gray-50 p-6 rounded-lg shadow">
                   <ul className="text-gray-600 space-y-2">
-                    <li><strong>Email:</strong> tugcankartall@gmail.com</li>
+                    <li><strong>Email:</strong> tugcankartall@gmail.com </li>
                     <li><strong>Languages:</strong> English, Turkish</li>
                   </ul>
                 </div>
