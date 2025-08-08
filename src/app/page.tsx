@@ -36,7 +36,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row gap-4 lg:items-center justify-center">
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1xrJ84Xy-hr9ki4KIobLJcy4SLw-d75P-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1M2uxaj_wUkxQ5pG-NqGkg-NB6p-s-y2M/view?usp=sharing"
                 passHref
               >
                 <button className="flex items-center gap-x-2 bg-blue-700 text-white text-lg px-4 py-2 rounded-full font-medium hover:bg-blue-800 transition duration-200 shadow-md lg:mx-0 mx-auto">
@@ -69,7 +69,7 @@ export default function Home() {
                 </Link>
                 <Link
                   target="_blank"
-                  href="mailto:tugcankartal01@gmail.com"
+                  href="mailto:tugcankartall@gmail.com"
                   className="hover:text-blue-700 transition"
                 >
                   <SiGmail />
