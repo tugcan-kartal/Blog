@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { FaUser } from "react-icons/fa";
+import Link from "next/link";
 
 interface Post {
   _id: string;
@@ -78,7 +79,7 @@ const BlogPost = () => {
         <h1 className="text-5xl font-extrabold text-gray-900 text-center">
           {post.title}
         </h1>
-        <p className="text-lg font-semibold text-gray-500 text-center">{post.desc}</p>
+        <Link href={post.desc} className="text-lg font-semibold text-gray-500 text-center underline">{post.desc}</Link>
         <div className="flex items-center space-x-4 mt-4">
           <FaUser className="text-xl" />
           <span className="text-gray-700 font-medium text-lg">

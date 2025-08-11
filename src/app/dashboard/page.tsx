@@ -110,22 +110,26 @@ const Dashboard = () => {
                     type="text"
                     placeholder="Title"
                     className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required
                     />
                     <input
                     type="text"
-                    placeholder="Desc"
+                    placeholder="Related blog url or description"
                     className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    required
                     />
                     <input
                     type="text"
                     placeholder="Image URL"
                     className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
                     />
                     <textarea
                     placeholder="Content"
                     cols={30}
                     rows={10}
                     className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
                     ></textarea>
                     <button
                     type="submit"
@@ -160,7 +164,7 @@ const Dashboard = () => {
                     <p className="text-gray-600 mt-2">{post.desc}</p>
                     <button
                         onClick={() => handleDelete(post._id)}
-                        className="text-red-500 hover:text-red-700 mt-4 block text-right"
+                        className="inline-flex items-center mt-5 px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300"
                     >
                         Delete
                     </button>
